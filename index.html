@@ -12,13 +12,21 @@
 		<meta name="keywords" content="" />
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
 		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
+        <script src="js/jquery.simplemodal.js">
+        <script>
+        </script>
+        <link rel="stylesheet" href="css/overcast/jquery-ui.min.css" />
+        <link rel="stylesheet" href="css/overcast/jquery.ui.theme.css" />
+        <link rel="stylesheet" href="css/basic.css" />
 	
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/basic.css" />
 			<link rel="stylesheet" href="css/custom.css" />
 		</noscript>
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
@@ -71,7 +79,7 @@
 					</header>
 					<div class="container">
 						<div class="row">
-							<div class="4u">
+							<div class="3u">
 								<section class="box box-style2">
 									<a href="#" class="image image-full">
 									<img src="images/marcel.jpg" alt="" ></a>
@@ -79,33 +87,86 @@
 									<p>PyCursos (PE)</p>	
 									
 									<hr>
-										<h4><strong>Minicurso:</strong> Workshop de Python</h4>
-
-										<p>Neste workshop passaremos pelas funcionalidades básicas e avançadas de Python e pelos diversos paradigmas (procedural, orientado a objetos e funcional). O participante sairá com uma base para construir seus primeiros programas a partir deste mini-curso. <u>Público-alvo:</u> Iniciantes</p>
+                                    <h4><a class="modal" href="#"><strong>Minicurso:</strong> Workshop de Python</a></h4>
+                                        <div class="talk" >
+                                            <h3>Minicurso: Workshop de Python</a></h3>
+                                            <p id="ok">Neste workshop passaremos pelas funcionalidades básicas e avançadas de Python e pelos diversos paradigmas (procedural, orientado a objetos e funcional). O participante sairá com uma base para construir seus primeiros programas a partir deste mini-curso. <u>Público-alvo:</u> Iniciantes</p>
+                                        </div>
 									
 								</section>
 							</div>
-							<div class="4u">
+							<div class="3u">
 								<section class="box box-style2">
 									<a href="#" class="image image-full">
 									<img src="images/tatiana.jpg" alt="" ></a>
 									<h3>Tatiana Al-Chueyr</h3>
 									<p>Globo.com (RJ)</p>									
 									<hr>
-									<h4><strong>Palestra:</strong> (A definir)</h4>
+                                    <h4><a href="#" class="modal"><strong>Palestra:</strong>Cuidando das dependências de seus projetos Python</a></h4>
+                                    <div class='talk'>
+                                        <h3>Palestra: Cuidando das dependências de seus projetos Python</h3>
+                                        <p>
+    Ao evoluírem, muitos projetos Python tornam-se dependentes de bibliotecas externas.
+    <br/>
+    <br/>
+
+    Há alguns projetos, como o Django, que são auto-contidos e não possuem dependências (pelo menos até a versão 1.5.4). No outro extremo, há projetos como o Plone: a instalação de sua versão 4.3.2 requer 234 pacotes!
+
+    <br/>
+    <br/>
+    Para faciitar a gestão de dependências, desenvolvedores freqüentemente utilizam ferramentas como pip e ambientes virtuais (venv ou virtualenv, por exemplo). Entretanto, para muitos, tais ferramentas são tratadas como caixas-pretas, o que pode vir a ocasionar problemas - como, por exemplo, na resolução de conflitos de dependências. Se você nunca teve problemas - fique atento, eu já tive, e a Globo.com também.
+
+    <br/>
+    <br/>
+    Durante esta apresentação ilustrarei como é possível usufruir destas ferramentas e algumas de suas limitações. Serão apresentadas partes do código-fonte do pip e propostas de como é possível melhorar ainda mais a gestão de dependências de seus projetos Python, proporcionando a todos maior segurança.
+                                        </p>
+                                    </div>
 								</section>
 							</div>
-							<div class="4u">
+							<div class="3u">
 								<section class="box box-style2">
 									<a href="#" class="image image-full">
 									<img src="images/renato.png" alt="" ></a>
 									<h3>Renato Oliveira</h3>
 									<p>LabCodes (PE)</p>									
 									<hr>
-									<h4><strong>Minicurso:</strong> Workshop de Django</h4>
-                                    <p>Neste mini-curso vamos apresentar por meio de uma aplicação prática a base para o desenvolvimento web com framework Django, muito popular na comunidade open-source e usado por empresas como Globo.com, Instagr.am, Disqus, etc.</p>
+                                    <h4><a class="modal" href="#"><strong>Minicurso:</strong> Workshop de Django</a></h4>
+                                    <div class="talk">
+                                        <h3>Minicurso: Workshop de Django</h3>
+                                        <p>Neste mini-curso vamos apresentar por meio de uma aplicação prática a base para o desenvolvimento web com framework Django, muito popular na comunidade open-source e usado por empresas como Globo.com, Instagr.am, Disqus, etc.</p>
+                                    </div>
 								</section>
 							</div>
+							<div class="3u">
+								<section class="box box-style2">
+									<a href="#" class="image image-full">
+									<img src="images/daker.jpg" alt="" ></a>
+									<h3>Daker Fernandes Pinheiro</h3>
+									<p>INDT (PE)</p>	
+									
+									<hr>
+                                    <h4><a href="#" class="modal"><strong>Palestra:</strong>Functional Pattern Matching</a></h4>
+
+                                    <div class="talk">
+                                        <h3>Palestra: Functional Pattern Matching</h3>
+
+                                        <p>Pattern Matching é uma técnica para reconhecer padrões em estruturas.
+                                        <br/> 
+                                        Em linguagens funcionais e lógica como: Haskell, Elixir, Erlang e Prolog; as funções podem ser definidas dependendo do padrão de entrada.
+                                        <br/> <br/> 
+                                        Em Haskell, por exemplo, podemos fazer:<br/>
+                                        
+                                        fib 0 = 1<br/>
+                                        fib n = n * fib(n - 1)<br/></br>
+                                        Tal recurso nos ajuda a reduzir o número de condicionais e simplificar a compreensão do código.
+                                        <br/> 
+                                        
+                                        Python não fornece tal construção na linguagem, porém com um pouco de conhecimento (decorators, introspection e ast), podemos hackear para fazer pattern matching em Python!</p>
+                                    </div>
+									
+								</section>
+							</div>
+
 						</div>
 					</div>
 				</article>
@@ -296,6 +357,13 @@ _gaq.push(['_trackPageview']);
  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 
+jQuery(function ($) {
+    $("a.modal").click(function() {
+        $(this).parent().parent().find('.talk').modal();
+        return false;
+    });
+
+});
 </script>
 	</body>
 </html>

@@ -1,3 +1,6 @@
 #schedule {
 	width: 100%;
 }
+.talk {
+    display: none !important;
+}
